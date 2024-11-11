@@ -1,4 +1,4 @@
-### Installation Instructions
+# Installation Instructions
 
 ## If using an Ubuntu 18.04+ version
 ```

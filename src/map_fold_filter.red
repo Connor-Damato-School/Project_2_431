@@ -16,7 +16,20 @@ map: func [block f]
     result
 ]
 
+fold: func [block /local result]
+[
+    result: 0
+    foreach item block
+    [
+        result: result + item
+    ]
+    result
+]
+
+
 
 data: [1 2 3 4]
-result: (map data :addone)
-print result
+map_block: (map data :addone)
+fold_block: (fold data)
+print map_block
+print fold_block

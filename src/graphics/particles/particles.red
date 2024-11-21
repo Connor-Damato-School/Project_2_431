@@ -1,3 +1,4 @@
+; Super Cool Red graphics particle demo showing full potential of graphics system
 Red [
         Tile:  "Particles demo"
         Author: "Qingtian Xie"

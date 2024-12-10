@@ -1,5 +1,6 @@
 Red [Title: "Data Structures"]
 
+"Tree data structure"
 Tree: object [
     value: none
     left: none
@@ -47,3 +48,52 @@ print "Finding root 2:"
 either find root 2 [print "Found!"][print "Not found!"]
 print "Finding root 4:"
 either find root 4 [print "Found!"][print "Not found!"]
+
+
+"Linked list data structure"
+Head: object [
+    value: none
+    next: none
+]
+
+"Add a node to the linked list"
+append: func [head value][
+    either head/next = none [
+        print ["Appending new node with value:" value]
+        head/next: make Head [value: value next: none]
+        head/next/value: value ; ngl i have no idea why this line is necessary but it is
+    ] [
+        append head/next value
+    ]
+]
+
+"Traverse the linked list"
+traverse: func [head][
+    print head/value
+    if head/next [
+        traverse head/next
+    ]
+]
+
+"Remove a node from the linked list"
+remove: func[head node][
+    if head = node [head: head/next return] ; covers case where node is the head
+    either head/next = node
+    [head/next: node/next]
+    [either head/next [remove head/next node][return]]
+]
+
+head: make Head [value: 1 next: none]
+append head 2  ; Add a node to the linked list
+append head 3  ; Add another node to the linked list
+append head 4  ; Add another node to the linked list
+; head2: make Head [value: 4 next: make Head [value: 5 next: make Head [value: 6 next: none]]]
+
+print "Traversing the linked list:"
+traverse head
+
+print "Removing the second node:"
+remove head head/next
+
+print "Traversing the linked list after removal:"
+traverse head

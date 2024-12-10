@@ -1,0 +1,20 @@
+# Characteristics
+- Human-friendly syntax
+- Homoiconic (Red is its own meta-language and own data-format)
+- Functional, imperative, reactive and symbolic programming
+- Prototype-based object support
+- Multi-typing
+- Powerful pattern-matching Macros system
+- Rich set of built-in datatypes (50+)
+- Cross-compilation
+- Produces executables of less than 1MB, with no dependencies
+- Low-level system programming abilities through the built-in Red/System DSL
+- Powerful PEG parser DSL built-in
+- Fast, compacting Garbage Collector
+- Cross-platform native GUI system, with a UI layout DSL and drawing DSL
+- Bridging to the JVM
+- High-level scripting and REPL GUI and CLI consoles included
+- Visual Studio Code plugin, with many helpful features
+- Highly embeddable
+- Low memory footprint
+- Single-file (~1MB) contains whole toolchain, full standard library and REPL (**)

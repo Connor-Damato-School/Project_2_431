@@ -1,16 +1,20 @@
 # Usage
-## Setting up your environment
+## Beginner Syntax
 
-## Syntax
+### File Header
+`Red [Title: "<title for window>"]`
+
 ### Assigning variables
 `var: 12`
 
 `var2: "hi"`
 
+`:` is used to define and assign values to variables and functions
+`=` is used for comparing variables for boolean logic.
+
 ### Writing functions
 ```
 <func name>: func[<parameter names (separated by spaces)>][<code>]
-
 ```
 
 ### Control Structures:
@@ -41,4 +45,9 @@
 
 `any [<condition-1> <condition-2> ...]`
 - returns true if any conditional statements are true
-## Compiling and running your program
+
+## Compiling/Running your program
+###
+cd to src and run the following:
+- `linux/redc.exe <filename.red>`
+- `windows/redc.exe <filename.red>`
